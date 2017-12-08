@@ -1,0 +1,178 @@
+// 波浪css
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) scaleY(1);
+    }
+    50% {
+        transform: translateX(-25%) scaleY(0.5);
+    }
+    100% {
+        transform: translateX(-50%) scaleY(1);
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    background: url(bg.png),no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.wave-box{
+    width: 100%;
+    height: 202px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom:0;
+    z-index: 5;
+}
+
+.wave {
+    position: absolute;
+    left: 0;
+    bottom:0;
+    right: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat:no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+    z-index: 10;
+}
+
+// 动画播放的方向：alternate。备选。
+.waveTop {
+    background-size: 100% 202px;
+    background-image:url(sea3.png);
+    animation: move_wave 10s linear infinite normal;
+}
+
+.waveMiddle {
+    background-size: 100% 195px;
+    background-image:url(sea1.png);
+    animation: move_wave 13s linear infinite normal;
+}
+
+.waveBottom {
+    background-size: 100% 185px;
+    background-image:url(sea3.png);
+    animation: move_wave 15s linear infinite normal;
+}
+
+.waveBottom-box{
+    width: 100%;
+    height: 0;
+    background-color:#65B4FF; 
+    position: absolute;
+    left: 0;
+    z-index: 6;
+    bottom: 0;
+}
+// 遮罩css
+.add-shadow{
+    width: 300px;
+    height: 300px;
+    margin: 200px auto;
+    box-shadow:0px 2px 30px 0px rgba(8,64,130,0.09);
+}
+
+// 内容css
+.main-box{
+    width:482px;
+    height:660px; 
+    background:rgba(255,255,255,1);
+    border-radius: 4px ;
+    position: absolute;
+    top: 198px;
+    left: 719px;
+    z-index: 1;
+    box-shadow: 0px 2px 30px 0px rgba(8,64,130,0.09);
+    .main-logo{
+        width: 90px;
+        height: 84px;
+        margin-left: 196px;
+        margin-top: 60px;
+    }
+    .main-tab{
+        width: 174px;
+        height: 24px;
+        margin-left: 154px;
+        margin-top: 38px;
+        .common{
+            display: inline-block;
+            width:44px;
+            height:24px; 
+            font-size:22px;
+            font-family:PingFangSC-Regular;
+            color:rgba(153,153,153,1);
+            line-height:24px;
+        }
+        .main-register{
+            color:rgba(101,180,255,1);
+            margin-right: 86px;
+        }
+    }
+    .register-tail{
+        width:40px;
+        height:20px;
+        margin-left: 157px;
+        margin-top:8px;
+    }
+}
+
+.invite-bind{
+    width:660px;
+    height:408px; 
+    background:rgba(255,255,255,1);
+    border-radius: 4px ;
+    box-shadow: 0px 2px 30px 0px  rgba(8,64,130,0.09);
+    position: absolute;
+    top: 335.7px;
+    left: 626px;
+    z-index: 10;
+    .title{
+        width:156px;
+        height:24px; 
+        font-size:26px;
+        font-family:PingFangSC-Regular;
+        color:rgba(51,51,51,1);
+        line-height:24px;
+        margin-top: 90px;
+        margin-left: 255px;
+    }
+    .content{
+        width:398px;
+        height:16px; 
+        font-size:18px;
+        font-family:PingFangSC-Regular;
+        color:rgba(51,51,51,1);
+        line-height:16px;
+        margin-top: 20px;
+        margin-left: 134px;
+        margin-bottom: 44px;
+    }
+    .wei-xin-box{
+        width:100px;
+        height:100px; 
+        border: 2px solid rgba(221,221,221,1);
+        border-radius: 50%;
+        margin-left: 280px;
+        text-align: center;
+        line-height: 100px;
+    }
+    .nBind{
+        width:133px;
+        height:16px; 
+        font-size:14px;
+        font-family:PingFangSC-Regular;
+        color:rgba(204,204,204,1);
+        line-height:16px;
+        margin:70px 30px 26px 497.2px;
+    }
+}

@@ -1,0 +1,116 @@
+.page-launch {
+	width: 800px;
+	margin:100px auto 0;
+	.title {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 60px;		
+	}
+	
+	.component-account {
+		padding-bottom: 60px;
+    border-bottom: 1px solid #ccc;
+		.nav {
+			width: 310px;
+			margin-left: 270px;
+			margin-bottom: 50px;
+			cursor: pointer;
+			display: flex;
+			.text {
+				display: inline-block;
+			}
+			.item {
+				width: 50%;
+				padding: 15px 0;
+				text-align: center;
+				border-bottom: 1px solid #000;
+			}
+			.item-active {
+				border-bottom: 2px solid #000;
+			}
+		}
+		.user {
+			.item {
+	    	margin-top: 25px;
+				display: flex;
+
+			}
+		}		
+	}
+	input[type='text'],input[type='password'],input[type='button'] {
+    width: 350px;
+    height: 50px;
+    padding-left: 18px;
+    font-size: 14px;
+    background-color: #e1e1e1;
+    border: 1px solid transparent;		
+	}
+	input:focus, select:focus,textarea:focus {
+		border:1px solid #1589fc;
+		background-color: #fff;
+	}
+	select {
+		width: 350px;
+		height: 50px;
+		line-height: 50px;
+		background-color: #e1e1e1;
+	}	
+	textarea {
+		width: 350px;
+		height: 140px;
+		padding: 18px;
+		line-height: 18px;
+		background-color: #e1e1e1;
+	}
+	.component-company {
+		position: relative;
+		padding-bottom: 25px;
+		> div {
+			display: flex;
+			margin-top: 25px;
+		}
+
+	}
+	.component-repo {
+	}
+	.module-title {
+    font-size: 18px;
+    color: #000;
+    font-style: normal;
+    position: absolute;
+    top: 15px;
+    left: 0px;		
+	}
+	.module-text {
+		width: 250px;
+		text-align: center;
+		height: 50px;
+		line-height: 50px;
+		display: inline-block;
+	}	
+	.module-prefix {
+		background-color: #ccc;
+		display: inline-block;
+		width: 100px;
+		height: 50px;
+		line-height: 50px;
+		color: #fff;
+		text-align: center;
+	}
+	input.module-half-input {
+		display: inline-block;
+		width: 250px;
+	}
+	.common-module-item {
+		margin-top: 20px;
+	}
+	.component-company:after {
+		position: absolute;
+		right:0;
+		bottom: 0;
+		display: block;
+		width: 350px;
+		height: 1px;
+		background-color: #ccc;
+	}
+}

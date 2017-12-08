@@ -1,0 +1,117 @@
+.page-contest {
+	.component-banner {
+		width: 100%;
+		height: 400px;
+		background: url('/static/images/index-banner.jpg');
+		background-size: cover;
+		background-position: left top;
+		position: relative;
+		.wrapper {
+			width: 100%;
+			height: 84px;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+		}
+		.container {
+			width: 1160px;
+			padding:0px 40px;
+			height: 84px;
+			line-height: 84px;
+			display: flex;
+			justify-content:space-between;
+			margin: 0 auto;
+			background-color: #f8f8f8;			
+		}
+		.sort {
+			.item {
+				padding: 0px 20px;
+				border-right: 1px dotted #ddd;
+				letter-spacing: 2px;
+				color: #666;
+				cursor: pointer;
+			}
+			.active {
+				color: #000;
+				position: relative;
+				&:after {
+					display: block;
+					position: absolute;
+					left: 20px;
+					bottom:-10px;
+					content:"";
+					width:60px;
+					height: 2px;
+					background-color: #000;
+				}
+			}
+			.item:last-child {
+				border-right: none;
+			}
+			.item:first-child {
+				// padding-left: 0;
+			}
+		}
+		.deploy {
+			font-size: 20px;
+			letter-spacing: 2px;
+			.icon {
+				vertical-align: middle;
+				font-size: 36px;
+				margin-left: 20px;
+			}
+		}
+	}
+	.component-contest {
+		padding-bottom: 150px;
+		.container {
+			width: 1160px;
+			margin: 0 auto;
+			.contest {
+				width: 225px;
+				float: left;
+				margin: 90px 30px 0;
+				letter-spacing: 1px;
+			}
+			.title {
+				margin-top: 20px;
+				padding: 0 5px;
+			}
+			.panel {
+				margin-top: 10px;
+				padding: 0 5px 10px;
+				display: flex;
+				justify-content:space-between;
+				border-bottom: 1px dotted #ddd;
+			}
+			.award {
+				margin-top: 10px;
+				padding-left: 5px;
+			}
+			.winner {
+				margin-top: 5px;
+				padding-left: 5px;
+			}
+			.lefttime {
+				padding:0 0 10px 5px;
+				margin-top: 5px;
+				border-bottom: 1px dotted #ddd;
+			}
+			.data {
+				display: flex;
+				justify-content:space-between;
+				padding: 10px 0;
+				border-bottom: 1px dotted #ddd;				
+				color: #999;
+			}
+		}
+		.more {
+			width: 1160px;
+			margin: 75px auto 0;
+			text-align: center;
+			.btn {
+				display: inline-block;
+			}
+		}
+	}
+}
